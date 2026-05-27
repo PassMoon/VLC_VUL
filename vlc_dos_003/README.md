@@ -1,5 +1,3 @@
-The user wants me to write a similar report for DOS-003 (zlib per-frame decompression bomb). Let me recall the key differences from DOS-001:
-
 DOS-003: `block_zlib_decompress` at `mkv/util.cpp:129`
 - Per-frame zlib decompression with `block_Realloc(p_block, 0, n * 1000)`
 - Requires `ContentEncodingScope=1` (all frames, not just CodecPrivate)
